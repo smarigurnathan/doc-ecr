@@ -1,10 +1,9 @@
-```groovy
 pipeline {
     agent any
 
     environment {
         AWS_REGION = 'ap-south-1'
-        ECR_REGISTRY = 'YOUR_AWS_ACCOUNT_ID.dkr.ecr.ap-south-1.amazonaws.com'
+        ECR_REGISTRY = '071604987339.dkr.ecr.ap-south-1.amazonaws.com'
         ECR_REPOSITORY = 'jenkins-ecr-project'
         DOCKER_IMAGE_TAG = "${BUILD_NUMBER}"
     }
@@ -49,4 +48,3 @@ pipeline {
         }
     }
 }
-```
